@@ -133,7 +133,8 @@ def runGame():
             #check collision
             currentPos = [newCell['x'], newCell['y']]
             for eachDeath in deadZones:
-                if eachDeath[0] <= newCell['x'] and eachDeath[0] + 1 >= newCell['x'] and eachDeath[1] <= newCell['y'] and eachDeath[1] + 1 >= newCell['y']:
+                if eachDeath[0] <= newCell['x'] and eachDeath[0] + 1 >= newCell['x'] \
+				and eachDeath[1] <= newCell['y'] and eachDeath[1] + 1 >= newCell['y']:
                     isAlive = 'no'
                     lose += 1
 
@@ -232,10 +233,4 @@ while True:
     setDisplay = pygame.display.set_mode((dispWidth, dispHeight))
     pygame.display.set_caption('controlling')
     runGame()
-
-
-
-
-
-
     
