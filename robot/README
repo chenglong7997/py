@@ -1,0 +1,9 @@
+Arduino is used to control motors
+
+And I use raspberry pi to program the robot using python.
+
+In self_control.py, you can pre-program how the robot moves.
+
+And in ps_controller.py, you can use ps3 controller to control how the robot moves.
+
+In the future, I will add the image processing module to it. So the robot can move according the input from what it sees.
